@@ -271,7 +271,7 @@ div#services {
 }
 
 div#services span {
-  line-height: 2.6em;
+  line-height: 2.4em;
 }
 
 div#services--menu {
@@ -359,6 +359,10 @@ div#services--menu .services--menuitemlogo.nine {
 	height: 74px;
 }
 
+div#services--menu h3 {
+  font-weight: 500;
+}
+
 div#about {
     padding-top: 6.7em;
     text-align: center;
@@ -386,4 +390,71 @@ div#about span {
     max-width: 600px;
     display: inline-block;
     line-height: 1.65em;
+}
+
+div#trainers {
+    padding-top: 7.9em;
+    text-align: center;
+    height: 320px;
+}
+
+div#trainers h1 {
+    font-size: 1.7em;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+
+div#trainers span {
+    font-size: .7em;
+    margin: 0 auto;
+    display: inline-block;
+    line-height: 1.65em;
+}
+div#trainers--menu {
+    width: 90%;
+    max-width: 900px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    vertical-align: top;
+}
+
+div#trainers--menu .trainers--menuitem {
+  width: 29%;
+  display: inline-block;
+  height: auto;
+  padding: 1em;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 3em;
+}
+
+div#trainers--menu .trainers--menuitemlogo {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  margin-bottom: 1.6em;
+  background-repeat: no-repeat;
+  background-image: url('img/trainerpics.png');
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #F9F9F9;
+}
+
+div#trainers--menu .trainers--menuitemlogo.two {
+  background-position: -134px 0;
+}
+
+div#trainers--menu .trainers--menuitemlogo.three {
+  background-position: -267px 0;
+}
+
+div#trainers--menu h3 {
+  font-weight: 500;
+}
+
+div#trainers--menu span {
+  line-height: 2em;
+  margin: 1em auto;
 }
