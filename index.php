@@ -84,7 +84,7 @@ function showDiv(name) {
         <li><a href="#services">Our Services</a></li>
         <li><a href="#trainers">Meet Trainers</a></li>
       </ul>
-      <a id="signup" class="header--button__signup" href="#signup">Sign Up</a>
+      <a id="signup" class="header--button__signup" href="#contactform">Sign Up</a>
     </nav>
     <h1 id="header--h1">Unique regimen of fitness training</h1>
     <span id="header--text">Customized to fit your goals and fitness level</span>
