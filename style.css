@@ -483,7 +483,7 @@ div#contactform span {
     line-height: 1.65em;
 }
 
-div#contactform form#contact {
+div#contactform form#frmcontact {
     display: block;
     background-color: #FFFFFF;
     width: 595px;
@@ -493,7 +493,7 @@ div#contactform form#contact {
     padding: 3.3em;
 }
 
-div#contactform form#contact input, div#contactform form#contact textarea, div#contactform form#contact .styledselect {
+div#contactform form#frmcontact input, div#contactform form#frmcontact textarea, div#contactform form#frmcontact .styledselect {
     border-radius: 2px;
     border: 1px solid #8fa3aa;
     height: 26px;
@@ -502,19 +502,19 @@ div#contactform form#contact input, div#contactform form#contact textarea, div#c
     padding: 1em;
 }
 
-div#contactform form#contact .input__halfscreen {
+div#contactform form#frmcontact .input__halfscreen {
   width: 40%;
   margin-right: 1.1em;
 }
 
-div#contactform form#contact .input__fullscreen {
+div#contactform form#frmcontact .input__fullscreen {
   width: 85%;
   margin: auto;
   display: block;
   margin-right: 2.1em;
 }
 
-div#contactform form#contact textarea.input__fullscreen {
+div#contactform form#frmcontact textarea.input__fullscreen {
     position: relative;
     right: 1.1em;
     width: 86.5%;
@@ -523,11 +523,11 @@ div#contactform form#contact textarea.input__fullscreen {
     margin-bottom: 3.5em;
 }
 
-div#contactform form#contact .styledselect {
+div#contactform form#frmcontact .styledselect {
   overflow: hidden;
 }
 
-div#contactform form#contact .styledselect select {
+div#contactform form#frmcontact .styledselect select {
   background: transparent;
   border: none;
   height: 26px;
@@ -594,4 +594,76 @@ footer {
     max-width: 1400px;
     font-size: .6em;
     line-height: 2em;
+}
+
+div#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+}
+
+div.modal {
+    background-color: #F9F9F9;
+    border-radius: 4px;
+    width: 90%;
+    max-width: 640px;
+    font-size: .8em;
+    line-height: 1.5em;
+    position: absolute;
+    margin: auto;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    padding: 3em;
+    font-weight: 300;
+}
+
+div.modal:after {
+  content: ' ';
+  height: 24px;
+  width: 24px;
+  background: url('img/close.png') no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: block;
+  right: 1em;
+  top: 1em;
+  cursor: pointer;
+}
+
+div.modal.trainer {
+  text-align: center;
+  max-width: 320px;
+  top: 2343px;
+  display: none;
+}
+
+div.modal.trainer h2 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+div.modal.trainer h3 {
+  font-size: .9em;
+  font-weight: 400;
+  color: #6de076;
+}
+
+div#aboutmodal {
+  top: 1918px;
+  display: none;
+}
+
+div#overlay {
+  display: none;
+}
+
+div#contact a {
+  font-size: .9em;
+  font-weight: 400;
+  color: #666666;
+  text-decoration: none;
 }
