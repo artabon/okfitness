@@ -431,7 +431,7 @@ div#trainers--menu .trainers--menuitem {
   margin-top: 3em;
 }
 
-div#trainers--menu .trainers--menuitemlogo {
+div.trainers--menuitemlogo {
   display: inline-block;
   text-align: left;
   vertical-align: top;
@@ -444,11 +444,11 @@ div#trainers--menu .trainers--menuitemlogo {
   background-color: #F9F9F9;
 }
 
-div#trainers--menu .trainers--menuitemlogo.two {
+div.trainers--menuitemlogo.two {
   background-position: -134px 0;
 }
 
-div#trainers--menu .trainers--menuitemlogo.three {
+div.trainers--menuitemlogo.three {
   background-position: -267px 0;
 }
 
@@ -637,7 +637,7 @@ div.modal:after {
 div.modal.trainer {
   text-align: center;
   max-width: 320px;
-  top: 2343px;
+  top: 2383px;
   display: none;
 }
 
@@ -653,7 +653,7 @@ div.modal.trainer h3 {
 }
 
 div#aboutmodal {
-  top: 1918px;
+  top: 1958px;
   display: none;
 }
 

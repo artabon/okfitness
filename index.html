@@ -68,7 +68,13 @@ $(document).ready(function(){
 function showDiv(name) {
   $("div#"+name).show();
   $("div#overlay").show();
-  $("div#"+name)[0].scrollIntoView();
+  var scrollTarget = "div#"+name;
+  if($("div#"+name).hasClass("trainer")) {
+    scrollTarget = "div#trainers";
+  } else if($("div#"+name).hasClass("about")) {
+    scrollTarget = "about";
+  }
+  $(scrollTarget)[0].scrollIntoView();
 }
 
 </script>
@@ -199,7 +205,7 @@ body’s potential to move and sweat, and move and sweat some more. Let’s plan
     <div id="contactform">
       <h1>Get Started Today!</h1>
       <span>Fill-up the form and we’ll get back to you as soon as we can!</span>
-      <form enctype="multipart/form-data" autocomplete="off" method="post" name="contact" id="frmcontact" action="https://formspree.io/artabon@gmail.com">
+      <form enctype="multipart/form-data" autocomplete="off" method="post" name="contact" id="frmcontact" action="https://formspree.io/clients@optimumkinetics.com">
         <input class="input__halfscreen" id="firstname" name="firstname" type="text" placeholder="First Name" />
         <input class="input__halfscreen" id="lastname" name="lastname" type="text" placeholder="Last Name" />
         <input class="input__halfscreen" id="email" name="email" type="text" placeholder="Email Address" />
@@ -207,7 +213,6 @@ body’s potential to move and sweat, and move and sweat some more. Let’s plan
         <div class="input__fullscreen styledselect">
           <select name="service" id="service">
           <option value=" ">Choose Service</option>
-          <option value="Strength and Conditioning">Strength and Conditioning</option>
           <option value="Strength and Conditioning">Strength and Conditioning</option>
           <option value="Medical Training">Medical Training</option>
           <option value="Body Building">Body Building</option>
@@ -249,7 +254,7 @@ body’s potential to move and sweat, and move and sweat some more. Let’s plan
     </div>
   </footer>
   <div id="overlay"></div>
-  <div id="aboutmodal" class="modal">
+  <div id="aboutmodal" class="modal about">
     <br/><br/>
     Hey there! We are OK FITNESS, a group of energetic, fun-loving and goal-oriented motivational exercise specialists that would love to meet and train you. We are committed to turning you into the best version of yourself through working on your capabilities, maximizing your body’s potential to move and sweat, and move and sweat some more. Let’s plan and set an achievable goal with the right time frame, gradually working you up to a stronger and better you!
     <br/><br/>
@@ -259,6 +264,7 @@ body’s potential to move and sweat, and move and sweat some more. Let’s plan
     <br/><br/>
   </div>
   <div id="david" class="modal trainer">
+    <div class="trainers--menuitemlogo two"></div>
     <h2>David Victorio</h2>
     <br/><br/>
     <h3>Certifications</h3> <br/>
@@ -275,6 +281,7 @@ body’s potential to move and sweat, and move and sweat some more. Let’s plan
     Home Training <br/>
   </div>
   <div id="johannes" class="modal trainer">
+    <div class="trainers--menuitemlogo one"></div>
     <h2>Johannes Laue</h2>
     <br/><br/>
     <h3>Certifications</h3> <br/>
@@ -289,6 +296,7 @@ body’s potential to move and sweat, and move and sweat some more. Let’s plan
     Home Training<br/>
   </div>
   <div id="kenneth" class="modal trainer">
+    <div class="trainers--menuitemlogo three"></div>
     <h2>Kenneth Calara</h2>
     <br/><br/>
     <h3>Certifications</h3> <br/>
