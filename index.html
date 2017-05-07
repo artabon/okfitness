@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>OK Fitness - Optimum Kinetics Fitness</title>
+<title>OK Fitness</title>
 <meta name="description" content="Official website of Optimum Kinetics Fitness | Ok Fitness" />
 
 <!-- Twitter Card data -->
@@ -87,8 +87,9 @@ function showDiv(name) {
       <ul id="topmenu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Our Services</a></li>
-        <li><a href="#trainers">Meet Trainers</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="http://www.chopchel.com" target="_blank">Store</a></li>
       </ul>
       <a id="signup" class="header--button__signup" href="#contactform">Sign Up</a>
     </nav>
@@ -98,7 +99,7 @@ function showDiv(name) {
     <div id="featured">
       <div class="featured--card specialborderbottom">
         <h1>Our Services</h1>
-        <span>Aims to provide one-on-one fitness training, conditioning and strengthening</span>
+        <span>Strength and conditioning, body building, pilates and more!</span>
         <div id="services--bg"></div>
       </div>
       <div class="featured--card__center">
@@ -109,7 +110,7 @@ function showDiv(name) {
       </div>
       <div class="featured--card specialborderbottom">
         <h1>Meet The Trainers</h1>
-        <span>Qualified, positive, and goal-oriented personal trainers</span>
+        <span>Johannes, David, Kenneth</span>
         <div id="meetthetrainers--bg"></div>
       </div>
     </div>
@@ -145,7 +146,7 @@ function showDiv(name) {
         <div class="services--menuitem">
           <div class="services--menuitemlogo five"></div>
           <h3>Youth Training</h3>
-          <span>Interactive and hip! For the younger population that might need</span>
+          <span>Interactive and hip! For the younger population that might need a little extra movement!</span>
         </div>
         <div class="services--menuitem">
           <div class="services--menuitemlogo six"></div>
@@ -184,13 +185,13 @@ body’s potential to move and sweat, and move and sweat some more. Let’s plan
       <div id="trainers--menu">
         <div class="trainers--menuitem">
           <div class="trainers--menuitemlogo"></div>
-          <h3>Johanne Laue</h3>
+          <h3>Johannes Laue</h3>
           <span>Strength and Conditioning, Core Training, Speed and Agility, and more </span>
           <a href="javascript:showDiv('johannes');" class="learnmore--link">Learn More</a>
         </div>
         <div class="trainers--menuitem">
           <div class="trainers--menuitemlogo two"></div>
-          <h3>David Victorino</h3>
+          <h3>David Victorio</h3>
           <span>Strength and Conditioning, Endurance Training, Muscle Gaining, and more </span>
           <a href="javascript:showDiv('david');" class="learnmore--link">Learn More</a>
         </div>
@@ -237,7 +238,7 @@ body’s potential to move and sweat, and move and sweat some more. Let’s plan
         </div>
         <div class="contact--div__halfscreen">
           <h1>For Careers</h1>
-          <div class="contact__email detail"><a href="mailto:clients@optimumkinetics.com">clients@optimumkinetics.com</a></div>
+          <div class="contact__email detail"><a href="mailto:careers@optimumkinetics.com">careers@optimumkinetics.com</a></div>
         </div>
       </div>
     </div>
@@ -256,8 +257,6 @@ body’s potential to move and sweat, and move and sweat some more. Let’s plan
   <div id="overlay"></div>
   <div id="aboutmodal" class="modal about">
     <br/><br/>
-    Hey there! We are OK FITNESS, a group of energetic, fun-loving and goal-oriented motivational exercise specialists that would love to meet and train you. We are committed to turning you into the best version of yourself through working on your capabilities, maximizing your body’s potential to move and sweat, and move and sweat some more. Let’s plan and set an achievable goal with the right time frame, gradually working you up to a stronger and better you!
-    <br/><br/>
     OK Fitness is a Philippine-based personal training company that aims to provide one-on-one fitness training, conditioning and strengthening. Comprised of certified, positive and goal-oriented personal trainers, each trainer offers unique training skills and programs that help clients attain their fitness goals; all achievable by focusing on optimum movement, rest, recovery and body adaptation.
     <br/><br/>
     Each OK Fitness trainer offers a unique fitness training regimen customized to fit your goals and fitness level. Each training session is aimed to utilize your body to its maximum capacity - vastly improving on movement, strength, endurance, health, body composition, and concentration. OK Fitness trainers not only train you, they teach you the importance of each exercise and how to perform them correctly, allowing you to gradually perform the routine on your own. Personal training sessions can be performed in the comforts of your own home, select clubs and hotel facilities.
@@ -269,8 +268,8 @@ body’s potential to move and sweat, and move and sweat some more. Let’s plan
     <br/><br/>
     <h3>Certifications</h3> <br/>
     B.S. in Sports Science at the University of the Philippines <br/>
-    American council on exercise certified personal trainer<br/>
-    Physical education teacher to high school and college students<br/><br/>
+    American Council on Exercise certified personal trainer<br/>
+    Professor at Informatics College Eastwood<br/><br/>
     <h3>Expertise</h3> <br/>
     Strength and Conditioning<br/>
     Endurance training <br/>
@@ -286,7 +285,7 @@ body’s potential to move and sweat, and move and sweat some more. Let’s plan
     <br/><br/>
     <h3>Certifications</h3> <br/>
     B.S. in Sports Science at University of Santo Tomas<br/>
-    Intermediate mat pilates at Peak Pilates <br/><br/>
+    Peak Pilates Intermediate Mat instructor<br/><br/>
     <h3>Expertise</h3> <br/>
     Strength and Conditioning<br/>
     Resistance training / Weights training<br/>
@@ -301,8 +300,7 @@ body’s potential to move and sweat, and move and sweat some more. Let’s plan
     <br/><br/>
     <h3>Certifications</h3> <br/>
     Licensed Physical Therapist 2010<br/>
-    Rocktape Kinesiology / Power taping Certified 2010<br/>
-    American Council on Exercise Certified 2012 <br/>
+    American Council on Exercise certified personal trainer<br/>
     <br/><br/>
     <h3>Expertise</h3> <br/>
     Strength and Conditioning <br/>
