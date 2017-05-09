@@ -18,6 +18,33 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.min.css">
 
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://www.optimumkinetics.com/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.optimumkinetics.com/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.optimumkinetics.com/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.optimumkinetics.com/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://www.optimumkinetics.com/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://www.optimumkinetics.com/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://www.optimumkinetics.com/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://www.optimumkinetics.com/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://www.optimumkinetics.com/apple-touch-icon-180x180.png" />
+<link rel="icon" type="image/png" href="http://www.optimumkinetics.com/android-icon-192x192.png" sizes="192x192" />
+<link rel="icon" type="image/png" href="http://www.optimumkinetics.com/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="http://www.optimumkinetics.com/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="http://www.optimumkinetics.com/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="http://www.optimumkinetics.com/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="http://www.optimumkinetics.com/favicon-128.png" sizes="128x128" />
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-title" content="OK Fitness">
+<meta name="application-name" content="OK Fitness"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="http://www.optimumkinetics.com/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="http://www.optimumkinetics.com/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="http://www.optimumkinetics.com/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="http://www.optimumkinetics.com/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="http://www.optimumkinetics.com/mstile-310x310.png" />
+<meta name="theme-color" content="#ffffff">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
 // Select all links with hashes
@@ -89,7 +116,7 @@ function showDiv(name) {
         <li><a href="#about">About Us</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#trainers">Trainers</a></li>
-        <li><a href="http://www.chopchel.com" target="_blank">Store</a></li>
+        <li><a href="http://www.chophel.com" target="_blank">Store</a></li>
       </ul>
       <a id="signup" class="header--button__signup" href="#contactform">Sign Up</a>
     </nav>
