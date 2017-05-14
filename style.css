@@ -31,11 +31,11 @@ header nav {
 
 header nav #logo  {
   background: transparent url(img/logo.png) no-repeat;
-    width: 144px;
-    height: 52px;
-    position: absolute;
-    top: 20px;
-    background-size: contain;
+  width: 144px;
+  height: 52px;
+  position: absolute;
+  top: 20px;
+  background-size: contain;
 }
 
 header nav #topmenu {
@@ -67,6 +67,10 @@ header nav #signup {
   position: absolute;
   right: 50px;
   top: 29px;
+}
+
+header nav #menuburger {
+  display: none;
 }
 
 .header--button__signup {
@@ -140,6 +144,7 @@ div#featured div.featured--card, div#featured div.featured--card__center {
   background-color: #FFFFFF;
   margin: -3px;
   vertical-align: bottom;
+  position: relative;
 }
 
 div#featured div.featured--card {
@@ -194,19 +199,21 @@ div#featured .specialborderbottom:last-child::before {
 
 div#meetthetrainers--bg {
   content:'';
-  position: relative;
-  top:-72px;
+  position: absolute;
+  bottom:-1px;
   margin: auto;
   width: 156px;
   height: 118px;
   background: transparent url('img/meetthetrainers.png') no-repeat;
   z-index: 0;
+  left: 0;
+  right: 0;
 }
 
 div#services--bg {
   content:'';
-  position: relative;
-  top:-82px;
+  position: absolute;
+  bottom:-1px;
   margin: auto;
   width: 108px;
   height: 108px;
@@ -257,7 +264,7 @@ div#featured .featured--logo {
 
 div#home2 {
     width: 100%;
-    height: 160px;
+    min-height: 160px;
     padding-top: 13.2em;
     text-align: center;
     background: #f9f9f9;
@@ -279,7 +286,7 @@ div#home2 h2 {
 
 div#services {
     width: 100%;
-    height: 912px;
+    min-height: 912px;
     padding-top: 1.3em;
     text-align: center;
 }
@@ -411,7 +418,7 @@ div#about span {
 div#trainers {
     padding-top: 7.9em;
     text-align: center;
-    height: 493px;
+    min-height: 493px;
 }
 
 div#trainers h1 {
@@ -557,7 +564,6 @@ div#contact {
 }
 
 div.contact--container {
-    width: 50%;
     max-width: 600px;
     margin: auto;
     height: 100%;
@@ -684,4 +690,159 @@ div#contact a {
   font-weight: 400;
   color: #666666;
   text-decoration: none;
+}
+
+@media only screen and (max-width:749px) {
+  header nav {
+    background-color: #262628;
+    max-width: none;
+    width: auto;
+    margin: 0;
+    padding: 0 1em;
+    border: 0 none transparent;
+    z-index: 2;
+    text-align: center;
+  }
+
+  header nav ul#topmenu {
+    top: 86px;
+    border: 0 none transparent;
+    margin: 0px;
+    right: 0;
+    left: 0;
+    background-color: rgba(38,38,40,.98);
+    padding-bottom: 12em;
+    display: none;
+  }
+
+  header nav #topmenu li {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 2em;
+    padding-right: 0;
+  }
+
+  header nav #topmenu li:first-of-type {
+    margin-top: 7em;
+  }
+
+  header nav #topmenu li:last-of-type {
+    margin-bottom: 2em;
+  }
+
+  header nav #signup {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 70em;
+    right: auto;
+    display: none;
+  }
+
+  header nav #menuburger {
+    display: block;
+    position: absolute;
+    content: ' ';
+    width: 27.6px;
+    height: 22.2px;
+    right: 2em;
+    top: 2em;
+    background: transparent url('img/burger.png') no-repeat;
+    background-size: contain;
+  }
+
+  h1#header--h1 {
+    margin-top: 86px;
+  }
+
+  div#featured div.featured--card.specialborderbottom {
+    display: none;
+  }
+
+  div#featured div.featured--card__center {
+    margin-top: -4em;
+    width: 30%;
+    min-width: 14em;
+  }
+
+  div#services {
+    height: auto;
+  }
+
+  div#services span {
+    display: none;
+  }
+
+  div#services--menu {
+    width: 320px;
+    text-align: left;
+  }
+
+  div#services--menu .services--menuitem {
+    width: 125px;
+  }
+
+  div#about span {
+    width: 90%;
+  }
+
+  div#trainers {
+    height: auto;
+    padding-bottom: 2em;
+  }
+
+  div#trainers--menu .trainers--menuitem {
+    width: 320px;
+  }
+
+  div#trainers--menu span, div#trainers--menu a.learnmore--link {
+    display: none;
+  }
+
+  div#contactform {
+    height: auto;
+    padding-bottom: 2em;
+  }
+
+  div#contactform form#frmcontact {
+    height: auto;
+    width: auto;
+  }
+
+  div#contactform form#frmcontact .input__halfscreen,
+  div#contactform form#frmcontact textarea.input__fullscreen,
+  div#contactform form#frmcontact .styledselect select,
+  div#contactform form#frmcontact .input__halfscreen
+   {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+  }
+
+  div#contactform form#frmcontact textarea.input__fullscreen {
+    right: auto;
+  }
+
+  div#contactform form#frmcontact .styledselect {
+    width: 65%;
+    margin: auto;
+  }
+
+  div.contact--container {
+    width: 50%;
+    min-width: 364px;
+    text-align: center;
+  }
+
+  div.contact--div__halfscreen {
+    width: auto;
+    padding: .75em;
+    text-align: left;
+  }
+
+  div.modal {
+    width: 70%;
+  }
 }

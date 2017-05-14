@@ -5,6 +5,8 @@
 <title>OK Fitness</title>
 <meta name="description" content="Official website of Optimum Kinetics Fitness | Ok Fitness" />
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
 <!-- Twitter Card data -->
 <meta name="twitter:card" value="Official website of Optimum Kinetics Fitness | OK Fitness">
 
@@ -16,7 +18,7 @@
 <meta property="og:description" content="Official website of Optimum Kinetics Fitness | Ok Fitness" />
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="style.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://www.optimumkinetics.com/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.optimumkinetics.com/apple-touch-icon-114x114.png" />
@@ -96,13 +98,36 @@ function showDiv(name) {
   $("div#"+name).show();
   $("div#overlay").show();
   var scrollTarget = "div#"+name;
+  var targetTop = 0;
   if($("div#"+name).hasClass("trainer")) {
     scrollTarget = "div#trainers";
-  } else if($("div#"+name).hasClass("about")) {
-    scrollTarget = "about";
+  } else if($("div#"+name).hasClass("about") || $("div#"+name).hasClass("aboutmodal")) {
+    scrollTarget = "#about";
   }
+  targetTop = $(scrollTarget).offset().top;
+  $("div#"+name).css({"top":targetTop+50});
   $(scrollTarget)[0].scrollIntoView();
+  $(document).blur();
 }
+
+$(document).ready(function(){
+
+  // Hide menu on click anywhere
+  $("body").click(function(){
+    $("nav #topmenu, nav #signup").hide();
+  });
+
+  // Burger menu functionality
+  $("nav #menuburger").click(function(e){
+    $("nav #topmenu, nav #signup").toggle();
+    e.stopPropagation();
+  });
+
+  // Click on trainer pic to show bio
+  $(".trainers--menuitemlogo").click(function(e){
+    showDiv($(e.target).attr("data-target"));
+  });
+});
 
 </script>
 </head>
@@ -119,6 +144,7 @@ function showDiv(name) {
         <li><a href="http://www.chophel.com" target="_blank">Store</a></li>
       </ul>
       <a id="signup" class="header--button__signup" href="#contactform">Sign Up</a>
+      <a id="menuburger" href="#home"></a>
     </nav>
     <h1 id="header--h1">Unique regimen of fitness training</h1>
     <span id="header--text">Customized to fit your goals and fitness level</span>
@@ -211,19 +237,19 @@ body’s potential to move and sweat, and move and sweat some more. Let’s plan
       <span>Comprised of qualified, positive and goal-oriented personal trainers, each with unique training skills and programs</span>
       <div id="trainers--menu">
         <div class="trainers--menuitem">
-          <div class="trainers--menuitemlogo"></div>
+          <div data-target="johannes" class="trainers--menuitemlogo"></div>
           <h3>Johannes Laue</h3>
           <span>Strength and Conditioning, Core Training, Speed and Agility, and more </span>
           <a href="javascript:showDiv('johannes');" class="learnmore--link">Learn More</a>
         </div>
         <div class="trainers--menuitem">
-          <div class="trainers--menuitemlogo two"></div>
+          <div data-target="david" class="trainers--menuitemlogo two"></div>
           <h3>David Victorio</h3>
           <span>Strength and Conditioning, Endurance Training, Muscle Gaining, and more </span>
           <a href="javascript:showDiv('david');" class="learnmore--link">Learn More</a>
         </div>
         <div class="trainers--menuitem">
-          <div class="trainers--menuitemlogo three"></div>
+          <div data-target="kenneth" class="trainers--menuitemlogo three"></div>
           <h3>Kenneth Calara</h3>
           <span>Body Building, Weight Loss, Functional Training, and more </span>
           <a href="javascript:showDiv('kenneth');" class="learnmore--link">Learn More</a>
