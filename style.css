@@ -219,6 +219,8 @@ div#services--bg {
   height: 108px;
   background: transparent url('img/ourservices.png') no-repeat;
   z-index: 0;
+  left: 0;
+  right: 0;
 }
 
 div#featured .specialborderbottom:last-child {
@@ -386,9 +388,9 @@ div#services--menu h3 {
 }
 
 div#about {
-    padding-top: 6.7em;
+    padding: 6.7em 0 2em;
     text-align: center;
-    height: 320px;
+    min-height: 320px;
     background: url('img/aboutus-bg.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -798,6 +800,7 @@ div#contact a {
 
   div#trainers--menu .trainers--menuitem {
     width: 320px;
+    padding: 1em 0;
   }
 
   div#trainers--menu span, div#trainers--menu a.learnmore--link {
@@ -854,5 +857,9 @@ div#contact a {
 @media only screen and (max-width:344px) {
   div#home2 {
     margin-top: 6em;
+  }
+
+  div#contactform span {
+    width: 90%;
   }
 }
