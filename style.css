@@ -787,6 +787,10 @@ div#contact a {
     width: 90%;
   }
 
+  div#about h2 {
+    width: 90%;
+  }
+
   div#trainers {
     height: auto;
     padding-bottom: 2em;
@@ -844,5 +848,11 @@ div#contact a {
 
   div.modal {
     width: 70%;
+  }
+}
+
+@media only screen and (max-width:344px) {
+  div#home2 {
+    margin-top: 6em;
   }
 }
