@@ -100,7 +100,7 @@ function showDiv(name) {
   var scrollTarget = "div#"+name;
   var targetTop = 0;
   if($("div#"+name).hasClass("trainer")) {
-    scrollTarget = "div#trainers";
+    scrollTarget = ($(window).width()>749)?"div#trainers":"div#"+name;
   } else if($("div#"+name).hasClass("about") || $("div#"+name).hasClass("aboutmodal")) {
     scrollTarget = "#about";
   }
