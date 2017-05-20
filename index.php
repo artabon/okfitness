@@ -13,12 +13,12 @@
 <!-- Open Graph data -->
 <meta property="og:title" content="OK Fitness : Optimum Kinetics" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="" />
-<meta property="og:image" content="" />
+<meta property="og:url" content="http://optimumkinetics.com/" />
+<meta property="og:image" content="http://optimumkinetics.com/img/okfitnesslogo.png" />
 <meta property="og:description" content="Official website of Optimum Kinetics Fitness | Ok Fitness" />
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style.min.css">
 
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://www.optimumkinetics.com/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.optimumkinetics.com/apple-touch-icon-114x114.png" />

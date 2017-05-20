@@ -832,10 +832,6 @@ div#contact a {
     padding: 1em 0;
   }
 
-  div#trainers--menu span, div#trainers--menu a.learnmore--link {
-    display: none;
-  }
-
   div#contactform {
     height: auto;
     padding-bottom: 2em;
@@ -868,7 +864,6 @@ div#contact a {
 
   div.contact--container {
     width: 50%;
-    /*min-width: 364px;*/
     text-align: center;
   }
 
