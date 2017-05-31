@@ -2,20 +2,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>OK Fitness</title>
-<meta name="description" content="Official website of Optimum Kinetics Fitness | Ok Fitness" />
+<title>Official website of OK Fitness</title>
+<meta name="description" content="Official website of Optimum Kinetics Fitness | OK Fitness" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
-
-<!-- Twitter Card data -->
-<meta name="twitter:card" value="Official website of Optimum Kinetics Fitness | OK Fitness">
 
 <!-- Open Graph data -->
 <meta property="og:title" content="OK Fitness : Optimum Kinetics" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://optimumkinetics.com/" />
 <meta property="og:image" content="http://optimumkinetics.com/img/okfitnesslogo.png" />
-<meta property="og:description" content="Official website of Optimum Kinetics Fitness | Ok Fitness" />
+<meta property="og:description" content="Official website of Optimum Kinetics Fitness | OK Fitness" />
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" value="Official website of Optimum Kinetics Fitness | OK Fitness">
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.min.css">
@@ -170,7 +170,7 @@ $(document).ready(function(){
   </header>
   <main>
     <div id="home2">
-      <h2>OK fitness is a Philippine-based personal training company that aims to provide one-on-one fitness training, conditioning, and strengthening.</h2>
+      <h2>OK Fitness is a Philippine-based personal training company that aims to provide one-on-one fitness training, conditioning, and strengthening.</h2>
     </div>
     <div id="services">
       <h1>Our Services</h1>
